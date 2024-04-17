@@ -75,7 +75,7 @@ int ep::depth_search(const board& puzzle, int movable, bool debug) {
             const board combination = combinations.top();
             combinations.pop();
             string hash = "";
-            for (const int &i : combination) hash = std::to_string(i);
+            for (const int &i : combination) hash += std::to_string(i);
             if (visited.find(hash) != visited.end()) continue;
             st.push(combination);
             visited.insert(hash);

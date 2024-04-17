@@ -59,9 +59,9 @@ int main() {
     //     6, 7, 8,
     // };
 
-    const int found = ep::depth_search(mat, 0, true);
+    const int found = ep::depth_search(mat, 0, false);
 
-    if (found > 0) {
+    if (-1 != found) {
         cout << "Found! Iterations: " << found;
     } else {
         cout << "There is no way to complete the puzzle!";
