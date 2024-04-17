@@ -8,7 +8,7 @@ CC = g++
 SRCDIR = src
 OBJDIR = obj
 EXT = cpp
-ARGS = -Wall -fsanitize=address -g
+ARGS = -Wall -g
 
 #############################################
 #   -- Don't touch anything below here --   #

@@ -12,7 +12,7 @@ using std::vector;
 string arr_to_str(const vector<int>& array) {
     std::stringstream ss;
     ss << "(";
-    for (int i = 0; i < array.size(); ++i) {
+    for (size_t i = 0; i < array.size(); ++i) {
         ss << array[i];
         if (i+1 != array.size()) ss << " ";
     }
@@ -20,9 +20,9 @@ string arr_to_str(const vector<int>& array) {
     return ss.str();
 }
 
-void vec_init(vector<int>& vec, int initial, int len) {
+void vec_init(vector<int>& vec, int initial, size_t len) {
     vec.reserve(len);
-    for (int i = 0; i < len; ++i) {
+    for (size_t i = 0; i < len; ++i) {
         vec.emplace_back(i) = initial;
     }
 }
